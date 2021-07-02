@@ -1,0 +1,14 @@
+#include<iostream>  
+using namespace std;  
+  
+int main()  
+{  
+    int i[100],p=0,num;  
+    while(cin>>num){  
+        i[p++]=num;  
+    }  
+    cout<<i[p-1];  
+    for(int t=p-2;t>=0;t--)  
+        cout<<" "<<i[t];  
+    cout<<endl;  
+} 
