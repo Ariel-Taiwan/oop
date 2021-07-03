@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>  
+#include<math.h>  
+using namespace std;  
+int main()  
+{  
+    int num;  
+    double sum=0,sec;  
+    char ma;  
+    cin>>num;  
+    cin>>ma;  
+    cin>>sec;  
+    switch(num){  
+        case 186:  
+            sum=round(sec*0.09);  
+            if(sum>186 && sum<=372)  
+                cout<<round(sum*0.9)<<endl;  
+            else if(sec*0.09>372)  
+                cout<<round(sum*0.8)<<endl;  
+            else  
+                cout<<186<<endl;  
+            break;  
+        case 386:  
+            sum=round(sec*0.08);  
+            if(sum>386 && sum<=772)  
+                cout<<round(sum*0.8)<<endl;  
+            else if(sec*0.08>772)  
+                cout<<round(sum*0.7)<<endl;  
+            else  
+                cout<<386<<endl;  
+            break;  
+        case 586:  
+            sum=round(sec*0.07);  
+            if(sum>586 && sum<=1172)  
+                cout<<round(sum*0.7)<<endl;  
+            else if(sec*0.07>1172)  
+                cout<<round(sum*0.6)<<endl;  
+            else  
+                cout<<586<<endl;  
+            break;  
+        case 986:  
+            sum=round(sec*0.06);  
+            if(sum>986 && sum<=1972)  
+                cout<<round(sum*0.6)<<endl;  
+            else if(sec*0.06>1972)  
+                cout<<round(sum*0.5)<<endl;  
+            else  
+                cout<<986<<endl;  
+            break;  
+    }  
+}
