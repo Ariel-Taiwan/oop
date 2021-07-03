@@ -1,0 +1,12 @@
+//https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=3690
+#include<bits/stdc++.h>      
+using namespace std;      
+int main()       
+{    
+    int n,a,b;  
+    cin>>n;  
+    for(int i=0;i<n;i++){  
+        cin>>a>>b;  
+        cout<<a*250+b*175<<endl;  
+    }   
+}
