@@ -1,0 +1,13 @@
+//https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=30792
+#include<bits/stdc++.h>    
+using namespace std;    
+int main()     
+{  
+    double a,b;  
+    while(cin>>a>>b){  
+    if(b==1)  
+        cout<<fixed<<setprecision(1)<<(a-80)*0.7<<endl;  
+    else  
+        cout<<fixed<<setprecision(1)<<(a-70)*0.6<<endl;  
+    }      
+}
