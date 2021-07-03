@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>  
+//#include<cstring>  
+using namespace std;  
+int main()  
+{  
+    char n[100],m[100];  
+    int a,b,s[100][100],sum=0;  
+    //memset(s,0, sizeof(s));  
+    cin>>a>>b;  
+    for(int i=1;i<=a;i++)    
+        cin>>n[i];   
+    for(int i=1;i<=b;i++){  
+        cin>>m[i];  
+        s[0][i]=0;  
+    }  
+    for(int i=1;i<=a;i++){  
+        s[i][0]=0;  
+        for(int j=1;j<=b;j++){  
+            if(n[i]==m[j]){  
+                s[i][j]=s[i-1][j-1]+1;  
+                //cout<<"here"<<s[i][j]<<endl;  
+            }  
+            else if(s[i-1][j]>=s[i][j-1])  
+                s[i][j]=s[i-1][j];  
+            else  
+                s[i][j]=s[i][j-1];  
+        }  
+    }  
+    for(int i=1;i<=a;i++){  
+        for(int j=1;j<=b;j++){  
+            if(s[i][j]>sum){  
+                sum=s[i][j];  
+                //cout<<sum<<endl;  
+            }  
+        }  
+    }  
+    cout<<sum<<endl;  
+}
