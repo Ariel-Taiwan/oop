@@ -1,0 +1,20 @@
+//https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=30786
+#include<bits/stdc++.h>    
+using namespace std;    
+int main()     
+{  
+    int n;  
+    float min,max,data[11];  
+    cin>>data[0];  
+    min=data[0];  
+    max=data[0];  
+    for(int i=1;i<10;i++){  
+        cin>>data[i];  
+        if(min>data[i])  
+            min=data[i];  
+        if(max<data[i])  
+            max=data[i];  
+    }  
+    cout<<fixed<<setprecision(2)<<"maximum:"<<max<<endl;  
+    cout<<fixed<<setprecision(2)<<"minimum:"<<min<<endl;  
+}
