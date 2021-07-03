@@ -1,0 +1,13 @@
+//https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=3678
+#include<bits/stdc++.h>      
+using namespace std;      
+int main()       
+{    
+    int a,which,b;    
+    char data[13][10]= {"rat","ox","tiger","rabbit","dragon","snake","horse","sheep","monkey","rooster","dog","pig"};    
+    cin>>a>>b;    
+    if(a==23 || a==0)  
+        cout<<data[0]<<endl;  
+    else  
+        cout<<data[(a+1)/2]<<endl;  
+}
