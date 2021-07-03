@@ -1,0 +1,16 @@
+//https://e-tutor.itsa.org.tw/e-Tutor/mod/programming/view.php?id=30752
+#include<bits/stdc++.h>    
+using namespace std;    
+int main()     
+{  
+    int n,sum=0,flag=0;  
+    cin>>n;  
+    for(int i=2;i<n;i++){  
+        if(n%i==0)  
+            flag++;  
+    }  
+    if(flag)  
+        cout<<"NO"<<endl;  
+    else  
+        cout<<"YES"<<endl;  
+}
